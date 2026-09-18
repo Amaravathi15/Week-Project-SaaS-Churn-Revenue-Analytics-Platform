@@ -1,0 +1,421 @@
+CustomerID,CompanyName,Total_MRR,Total_Seats,Total_Logins,Total_ActiveUsers,Total_APICalls,High_Value_Flag,At_Risk_Flag,Account_Status
+C1001,Ishaan Joshi Systems,278.6,6.0,148.0,72.0,10276.0,Regular,Not At Risk,Regular
+C1002,Tara Sharma Technologies,246.76,4.0,217.0,134.0,15512.0,Regular,Not At Risk,Regular
+C1003,Zoya Das Systems,278.6,6.0,187.0,116.0,19771.0,Regular,Not At Risk,Regular
+C1004,Diya Joshi Labs,80.36,9.0,82.0,42.0,14012.0,Regular,Not At Risk,Regular
+C1005,Tara Joshi Systems,618.76,4.0,133.0,61.0,13232.0,High Value,Not At Risk,High Value
+C1006,Sanjay Reddy Labs,1618.92,2.0,86.0,51.0,8815.0,High Value,Not At Risk,High Value
+C1007,Sai Das Technologies,658.68,5.0,117.0,64.0,25511.0,High Value,Not At Risk,High Value
+C1008,Nikita Gupta Solutions,818.36,9.0,155.0,104.0,23906.0,High Value,Not At Risk,High Value
+C1009,Rohan Patel Technologies,2098.6,6.0,220.0,116.0,10535.0,High Value,Not At Risk,High Value
+C1010,Tara Iyer Labs,278.6,6.0,81.0,33.0,4316.0,Regular,At Risk,At Risk
+C1011,Rohan Iyer Solutions,262.68,5.0,96.0,48.0,22182.0,Regular,Not At Risk,Regular
+C1012,Meera Patel Labs,1978.68,5.0,14.0,7.0,6827.0,High Value,At Risk,High Value
+C1013,Farhan Das Industries,1931.28,11.0,0.0,0.0,71.0,High Value,At Risk,High Value
+C1014,Rahul Patel Industries,68.6,6.0,37.0,22.0,9530.0,Regular,At Risk,At Risk
+C1015,Sanjay Gupta Industries,246.76,4.0,61.0,34.0,15818.0,Regular,At Risk,At Risk
+C1016,Diya Singh Industries,978.04,13.0,38.0,15.0,6672.0,High Value,At Risk,High Value
+C1017,Rahul Reddy Solutions,60.76,4.0,24.0,13.0,2822.0,Regular,At Risk,At Risk
+C1018,Myra Khan Systems,2098.6,6.0,87.0,53.0,7947.0,High Value,Not At Risk,High Value
+C1019,Deepak Nair Labs,326.36,9.0,149.0,73.0,8711.0,High Value,Not At Risk,High Value
+C1020,Saanvi Menon Group,68.6,6.0,55.0,33.0,4663.0,Regular,At Risk,At Risk
+C1021,Vivaan Singh Systems,76.44,8.0,264.0,148.0,22493.0,Regular,Not At Risk,Regular
+C1022,Rahul Singh Technologies,64.68,5.0,44.0,17.0,22354.0,Regular,At Risk,At Risk
+C1023,Meera Menon Industries,778.44,8.0,14.0,4.0,7528.0,High Value,At Risk,High Value
+C1024,Vivaan Verma Solutions,246.76,4.0,47.0,22.0,1144.0,Regular,At Risk,At Risk
+C1025,Diya Singh Labs,262.68,5.0,70.0,34.0,33541.0,Regular,At Risk,At Risk
+C1026,Vivaan Singh Solutions,698.6,6.0,62.0,35.0,6120.0,High Value,At Risk,High Value
+C1027,Vihaan Bose Group,778.44,8.0,18.0,10.0,2758.0,High Value,At Risk,High Value
+C1028,Ananya Gupta Solutions,294.52,7.0,206.0,123.0,14811.0,High Value,Not At Risk,High Value
+C1029,Sai Khan Technologies,698.6,6.0,81.0,35.0,14593.0,High Value,At Risk,High Value
+C1030,Rohan Bose Solutions,2458.36,9.0,396.0,231.0,16297.0,High Value,Not At Risk,High Value
+C1031,Isha Khan Technologies,294.52,7.0,0.0,0.0,0.0,High Value,At Risk,High Value
+C1032,Naveen Menon Industries,60.76,4.0,0.0,0.0,0.0,Regular,At Risk,At Risk
+C1033,Arun Sharma Industries,342.28,10.0,146.0,93.0,18744.0,High Value,Not At Risk,High Value
+C1034,Sneha Rao Industries,2578.28,10.0,0.0,0.0,0.0,High Value,At Risk,High Value
+C1035,Arjun Gupta Industries,1978.68,5.0,171.0,97.0,28076.0,High Value,Not At Risk,High Value
+C1036,Krishna Sharma Solutions,80.36,9.0,168.0,102.0,31827.0,Regular,Not At Risk,Regular
+C1037,Diya Das Industries,1978.68,5.0,42.0,23.0,6623.0,High Value,At Risk,High Value
+C1038,Sneha Menon Industries,246.76,4.0,71.0,38.0,9156.0,Regular,At Risk,At Risk
+C1039,Arjun Iyer Systems,76.44,8.0,83.0,42.0,27844.0,Regular,Not At Risk,Regular
+C1040,Reyansh Nair Labs,326.36,9.0,92.0,50.0,17865.0,High Value,Not At Risk,High Value
+C1041,Sanjay Khan Systems,437.8,16.0,111.0,56.0,17426.0,High Value,Not At Risk,High Value
+C1042,Meera Iyer Industries,60.76,4.0,311.0,183.0,33162.0,Regular,Not At Risk,Regular
+C1043,Aadhya Khan Systems,698.6,6.0,173.0,99.0,13399.0,High Value,Not At Risk,High Value
+C1044,Krishna Bose Solutions,246.76,4.0,78.0,41.0,4675.0,Regular,At Risk,At Risk
+C1045,Kavya Verma Solutions,2578.28,10.0,61.0,30.0,14787.0,High Value,At Risk,High Value
+C1046,Tara Patel Industries,294.52,3.0,35.0,10.0,12343.0,High Value,At Risk,High Value
+C1047,Rohan Das Technologies,80.36,9.0,140.0,72.0,7995.0,Regular,Not At Risk,Regular
+C1048,Aman Singh Labs,658.68,5.0,62.0,29.0,28335.0,High Value,At Risk,High Value
+C1049,Farhan Gupta Labs,4676.88,16.0,32.0,18.0,5258.0,High Value,At Risk,High Value
+C1050,Arun Khan Solutions,1825.3600000000001,10.0,101.0,51.0,7638.0,High Value,Not At Risk,High Value
+C1051,Priya Gupta Labs,262.68,5.0,92.0,52.0,4768.0,Regular,Not At Risk,Regular
+C1052,Aadhya Reddy Labs,390.04,13.0,92.0,59.0,10723.0,High Value,Not At Risk,High Value
+C1053,Sanjay Joshi Group,310.44,8.0,84.0,43.0,8093.0,High Value,Not At Risk,High Value
+C1054,Arjun Bose Group,818.36,9.0,14.0,9.0,4910.0,High Value,At Risk,High Value
+C1055,Arun Rao Technologies,68.6,6.0,134.0,64.0,20493.0,Regular,Not At Risk,Regular
+C1056,Kavya Rao Systems,658.68,5.0,14.0,6.0,14097.0,High Value,At Risk,High Value
+C1057,Reyansh Joshi Industries,76.44,8.0,260.0,136.0,14388.0,Regular,Not At Risk,Regular
+C1058,Riya Das Labs,64.68,5.0,45.0,23.0,4003.0,Regular,At Risk,At Risk
+C1059,Myra Verma Labs,658.68,5.0,113.0,71.0,4999.0,High Value,Not At Risk,High Value
+C1060,Aarav Reddy Systems,80.36,9.0,385.0,224.0,31791.0,Regular,Not At Risk,Regular
+C1061,Isha Gupta Group,310.44,8.0,266.0,158.0,16514.0,High Value,Not At Risk,High Value
+C1062,Kavya Das Solutions,358.2,11.0,6.0,2.0,2946.0,High Value,At Risk,High Value
+C1063,Rahul Menon Systems,56.84,3.0,52.0,25.0,12377.0,Regular,At Risk,At Risk
+C1064,Riya Sharma Technologies,68.6,6.0,88.0,39.0,16026.0,Regular,Not At Risk,Regular
+C1065,Priya Verma Systems,898.2,11.0,90.0,47.0,19830.0,High Value,Not At Risk,High Value
+C1066,Ishaan Reddy Solutions,88.2,11.0,32.0,16.0,8966.0,Regular,At Risk,At Risk
+C1067,Tara Khan Group,326.36,9.0,139.0,83.0,23539.0,High Value,Not At Risk,High Value
+C1068,Ananya Gupta Industries,262.68,5.0,5.0,1.0,1291.0,Regular,At Risk,At Risk
+C1069,Aadhya Joshi Systems,80.36,9.0,262.0,141.0,17132.0,Regular,Not At Risk,Regular
+C1070,Kiara Das Solutions,64.68,5.0,0.0,0.0,0.0,Regular,At Risk,At Risk
+C1071,Arjun Patel Labs,326.36,9.0,82.0,41.0,7361.0,High Value,Not At Risk,High Value
+C1072,Rohan Gupta Technologies,278.6,6.0,368.0,211.0,45924.0,Regular,Not At Risk,Regular
+C1073,Vivaan Menon Group,84.28,10.0,150.0,86.0,29996.0,Regular,Not At Risk,Regular
+C1074,Priya Khan Group,294.52,7.0,22.0,12.0,3339.0,High Value,At Risk,High Value
+C1075,Ishaan Khan Industries,738.52,7.0,39.0,22.0,12737.0,High Value,At Risk,High Value
+C1076,Arun Khan Labs,2542.6400000000003,19.0,97.0,46.0,3740.0,High Value,Not At Risk,High Value
+C1077,Krishna Nair Industries,80.36,9.0,64.0,35.0,21829.0,Regular,At Risk,At Risk
+C1078,Rohan Patel Group,76.44,8.0,32.0,13.0,12136.0,Regular,At Risk,At Risk
+C1079,Arun Rao Industries,778.44,8.0,73.0,43.0,8715.0,High Value,At Risk,High Value
+C1080,Rohan Sharma Group,310.44,8.0,29.0,14.0,11010.0,High Value,At Risk,High Value
+C1081,Ananya Nair Group,64.68,5.0,21.0,8.0,6779.0,Regular,At Risk,At Risk
+C1082,Aadhya Nair Systems,294.52,7.0,92.0,41.0,8629.0,High Value,Not At Risk,High Value
+C1083,Deepak Das Group,80.36,9.0,63.0,31.0,21976.0,Regular,At Risk,At Risk
+C1084,Meera Patel Industries,294.52,7.0,0.0,0.0,0.0,High Value,At Risk,High Value
+C1085,Aditya Reddy Group,618.76,4.0,109.0,60.0,5745.0,High Value,Not At Risk,High Value
+C1086,Karthik Sharma Systems,818.36,9.0,46.0,21.0,24023.0,High Value,At Risk,High Value
+C1087,Diya Iyer Labs,60.76,4.0,10.0,6.0,4931.0,Regular,At Risk,At Risk
+C1088,Reyansh Das Technologies,310.44,8.0,65.0,31.0,25835.0,High Value,At Risk,High Value
+C1089,Reyansh Bose Solutions,294.52,9.0,22.0,9.0,9825.0,High Value,At Risk,High Value
+C1090,Aarav Menon Group,326.36,9.0,9.0,4.0,2140.0,High Value,At Risk,High Value
+C1091,Myra Nair Solutions,618.76,4.0,13.0,6.0,1649.0,High Value,At Risk,High Value
+C1092,Aman Sharma Solutions,68.6,6.0,7.0,2.0,3097.0,Regular,At Risk,At Risk
+C1093,Aarav Joshi Technologies,658.68,5.0,263.0,159.0,32589.0,High Value,Not At Risk,High Value
+C1094,Isha Nair Solutions,1858.76,4.0,377.0,206.0,34990.0,High Value,Not At Risk,High Value
+C1095,Aarav Das Industries,72.52,7.0,170.0,92.0,25465.0,Regular,Not At Risk,Regular
+C1096,Deepak Gupta Labs,310.44,8.0,151.0,75.0,14710.0,High Value,Not At Risk,High Value
+C1097,Diya Gupta Industries,68.6,6.0,4.0,2.0,142.0,Regular,At Risk,At Risk
+C1098,Myra Nair Systems,818.36,9.0,78.0,38.0,10967.0,High Value,At Risk,High Value
+C1099,Ishaan Patel Group,88.2,11.0,69.0,33.0,9438.0,Regular,At Risk,At Risk
+C1100,Priya Gupta Solutions,2098.6,6.0,99.0,50.0,4439.0,High Value,Not At Risk,High Value
+C1101,Zoya Bose Industries,294.52,7.0,166.0,86.0,20407.0,High Value,Not At Risk,High Value
+C1102,Deepak Iyer Solutions,2218.52,7.0,329.0,181.0,27520.0,High Value,Not At Risk,High Value
+C1103,Pooja Menon Group,3057.96,14.0,205.0,127.0,19629.0,High Value,Not At Risk,High Value
+C1104,Farhan Iyer Group,72.52,7.0,14.0,6.0,3179.0,Regular,At Risk,At Risk
+C1105,Riya Gupta Labs,698.6,6.0,218.0,120.0,40850.0,High Value,Not At Risk,High Value
+C1106,Ananya Singh Group,199.0,1.0,19.0,11.0,5248.0,Regular,At Risk,At Risk
+C1107,Isha Nair Technologies,64.68,5.0,131.0,68.0,9557.0,Regular,Not At Risk,Regular
+C1108,Saanvi Joshi Systems,68.6,6.0,319.0,195.0,14818.0,Regular,Not At Risk,Regular
+C1109,Kiara Verma Industries,262.68,5.0,397.0,218.0,22170.0,Regular,Not At Risk,Regular
+C1110,Tara Sharma Solutions,294.52,7.0,70.0,37.0,7955.0,High Value,At Risk,High Value
+C1111,Priya Khan Industries,658.68,5.0,97.0,57.0,13354.0,High Value,Not At Risk,High Value
+C1112,Aarav Singh Labs,72.52,7.0,197.0,115.0,12639.0,Regular,Not At Risk,Regular
+C1113,Riya Iyer Technologies,2578.28,10.0,75.0,58.0,5941.0,High Value,At Risk,High Value
+C1114,Aadhya Das Industries,80.36,9.0,43.0,27.0,7252.0,Regular,At Risk,At Risk
+C1115,Rahul Rao Labs,88.2,11.0,32.0,11.0,4271.0,Regular,At Risk,At Risk
+C1116,Isha Gupta Group,80.36,9.0,3.0,2.0,1626.0,Regular,At Risk,At Risk
+C1117,Arun Gupta Labs,738.52,7.0,21.0,15.0,1511.0,High Value,At Risk,High Value
+C1118,Ishaan Reddy Group,278.6,6.0,25.0,9.0,2732.0,Regular,At Risk,At Risk
+C1119,Deepak Verma Systems,72.52,7.0,143.0,78.0,31571.0,Regular,Not At Risk,Regular
+C1120,Pooja Rao Solutions,310.44,8.0,53.0,31.0,6893.0,High Value,At Risk,High Value
+C1121,Ishaan Singh Group,1858.76,4.0,361.0,190.0,16589.0,High Value,Not At Risk,High Value
+C1122,Aarav Gupta Technologies,310.44,8.0,51.0,26.0,11495.0,High Value,At Risk,High Value
+C1123,Vihaan Joshi Solutions,92.12,12.0,103.0,64.0,8648.0,Regular,Not At Risk,Regular
+C1124,Krishna Sharma Systems,278.6,6.0,27.0,16.0,5295.0,Regular,At Risk,At Risk
+C1125,Kiara Verma Systems,88.2,11.0,171.0,97.0,12809.0,Regular,Not At Risk,Regular
+C1126,Sneha Iyer Group,96.04,13.0,198.0,131.0,18920.0,Regular,Not At Risk,Regular
+C1127,Divya Gupta Labs,278.6,6.0,173.0,91.0,17903.0,Regular,Not At Risk,Regular
+C1128,Sneha Rao Industries,88.2,11.0,325.0,187.0,29390.0,Regular,Not At Risk,Regular
+C1129,Farhan Reddy Labs,858.28,10.0,57.0,32.0,3842.0,High Value,At Risk,High Value
+C1130,Nikita Iyer Technologies,80.36,9.0,181.0,108.0,18465.0,Regular,Not At Risk,Regular
+C1131,Aditya Menon Industries,525.36,10.0,129.0,65.0,23099.0,High Value,Not At Risk,High Value
+C1132,Sneha Khan Solutions,775.04,14.0,37.0,14.0,9322.0,High Value,At Risk,High Value
+C1133,Divya Nair Solutions,80.36,9.0,0.0,0.0,0.0,Regular,At Risk,At Risk
+C1134,Tara Reddy Industries,56.84,3.0,453.0,232.0,31979.0,Regular,Not At Risk,Regular
+C1135,Nikita Menon Solutions,246.76,4.0,159.0,95.0,18102.0,Regular,Not At Risk,Regular
+C1136,Deepak Bose Group,294.52,7.0,47.0,25.0,12966.0,High Value,At Risk,High Value
+C1137,Arun Verma Labs,342.28,10.0,110.0,62.0,8261.0,High Value,Not At Risk,High Value
+C1138,Meera Sharma Labs,84.28,10.0,50.0,25.0,3912.0,Regular,At Risk,At Risk
+C1139,Arjun Menon Group,68.6,6.0,211.0,108.0,33461.0,Regular,Not At Risk,Regular
+C1140,Aarav Nair Systems,278.6,6.0,36.0,15.0,1991.0,Regular,At Risk,At Risk
+C1141,Ananya Joshi Industries,278.6,6.0,136.0,71.0,28450.0,Regular,Not At Risk,Regular
+C1142,Kavya Reddy Technologies,326.36,9.0,270.0,151.0,27711.0,High Value,Not At Risk,High Value
+C1143,Reyansh Menon Solutions,88.2,11.0,98.0,52.0,10005.0,Regular,Not At Risk,Regular
+C1144,Aditya Sharma Technologies,2698.2,11.0,216.0,131.0,22209.0,High Value,Not At Risk,High Value
+C1145,Pooja Reddy Solutions,68.6,6.0,313.0,169.0,23925.0,Regular,Not At Risk,Regular
+C1146,Priya Iyer Technologies,294.52,7.0,132.0,68.0,24680.0,High Value,Not At Risk,High Value
+C1147,Vivaan Khan Technologies,262.68,5.0,173.0,85.0,13087.0,Regular,Not At Risk,Regular
+C1148,Divya Bose Solutions,778.44,8.0,18.0,7.0,3392.0,High Value,At Risk,High Value
+C1149,Vivaan Verma Technologies,1978.68,5.0,71.0,39.0,23494.0,High Value,At Risk,High Value
+C1150,Rahul Singh Technologies,578.84,3.0,0.0,0.0,0.0,High Value,At Risk,High Value
+C1151,Aman Gupta Solutions,778.44,8.0,132.0,77.0,10874.0,High Value,Not At Risk,High Value
+C1152,Nikita Verma Technologies,294.52,7.0,19.0,7.0,4282.0,High Value,At Risk,High Value
+C1153,Aadhya Patel Solutions,618.76,4.0,30.0,11.0,7219.0,High Value,At Risk,High Value
+C1154,Kiara Das Group,723.3599999999999,10.0,8.0,4.0,3649.0,High Value,At Risk,High Value
+C1155,Naveen Verma Technologies,2098.6,6.0,97.0,46.0,21903.0,High Value,Not At Risk,High Value
+C1156,Diya Sharma Technologies,2218.52,7.0,85.0,46.0,12133.0,High Value,Not At Risk,High Value
+C1157,Meera Joshi Solutions,230.84,3.0,76.0,39.0,15644.0,Regular,At Risk,At Risk
+C1158,Farhan Nair Labs,84.28,10.0,201.0,97.0,21070.0,Regular,Not At Risk,Regular
+C1159,Deepak Bose Systems,80.36,9.0,50.0,26.0,5396.0,Regular,At Risk,At Risk
+C1160,Ishaan Singh Group,68.6,6.0,10.0,4.0,597.0,Regular,At Risk,At Risk
+C1161,Sneha Das Systems,246.76,4.0,22.0,9.0,21178.0,Regular,At Risk,At Risk
+C1162,Divya Nair Technologies,2098.6,6.0,26.0,14.0,1159.0,High Value,At Risk,High Value
+C1163,Meera Menon Industries,278.6,6.0,89.0,45.0,24521.0,Regular,Not At Risk,Regular
+C1164,Saanvi Menon Systems,80.36,9.0,255.0,139.0,27508.0,Regular,Not At Risk,Regular
+C1165,Arjun Das Solutions,72.52,7.0,153.0,93.0,13464.0,Regular,Not At Risk,Regular
+C1166,Deepak Joshi Industries,2338.44,8.0,31.0,21.0,7565.0,High Value,At Risk,High Value
+C1167,Aarav Patel Labs,278.6,6.0,66.0,26.0,26818.0,Regular,At Risk,At Risk
+C1168,Aditya Joshi Solutions,56.84,3.0,318.0,164.0,12269.0,Regular,Not At Risk,Regular
+C1169,Reyansh Menon Solutions,658.68,5.0,16.0,7.0,8651.0,High Value,At Risk,High Value
+C1170,Diya Verma Industries,76.44,8.0,74.0,46.0,5555.0,Regular,At Risk,At Risk
+C1171,Aditya Khan Industries,294.52,8.0,270.0,135.0,20380.0,High Value,Not At Risk,High Value
+C1172,Reyansh Menon Industries,818.36,9.0,23.0,10.0,2296.0,High Value,At Risk,High Value
+C1173,Kiara Bose Labs,76.44,8.0,35.0,20.0,6443.0,Regular,At Risk,At Risk
+C1174,Vivaan Verma Systems,230.84,3.0,63.0,28.0,7341.0,Regular,At Risk,At Risk
+C1175,Pooja Bose Solutions,56.84,3.0,103.0,47.0,22317.0,Regular,Not At Risk,Regular
+C1176,Sneha Khan Technologies,72.52,7.0,60.0,29.0,1509.0,Regular,At Risk,At Risk
+C1177,Isha Gupta Group,72.52,7.0,245.0,156.0,17908.0,Regular,Not At Risk,Regular
+C1178,Isha Menon Solutions,326.36,9.0,360.0,205.0,24438.0,High Value,Not At Risk,High Value
+C1179,Sneha Iyer Solutions,60.76,4.0,30.0,14.0,5745.0,Regular,At Risk,At Risk
+C1180,Rahul Menon Labs,68.6,6.0,142.0,94.0,8996.0,Regular,Not At Risk,Regular
+C1181,Isha Reddy Labs,230.84,3.0,65.0,34.0,2741.0,Regular,At Risk,At Risk
+C1182,Arun Menon Labs,1978.68,5.0,37.0,14.0,14175.0,High Value,At Risk,High Value
+C1183,Sanjay Gupta Labs,402.8,17.0,52.0,26.0,10636.0,High Value,At Risk,High Value
+C1184,Meera Verma Group,818.36,9.0,192.0,99.0,21884.0,High Value,Not At Risk,High Value
+C1185,Zoya Rao Labs,294.52,7.0,53.0,27.0,6286.0,High Value,At Risk,High Value
+C1186,Diya Rao Technologies,738.52,7.0,104.0,59.0,22089.0,High Value,Not At Risk,High Value
+C1187,Pooja Gupta Group,578.84,3.0,209.0,122.0,18117.0,High Value,Not At Risk,High Value
+C1188,Tara Rao Industries,778.44,8.0,389.0,245.0,35150.0,High Value,Not At Risk,High Value
+C1189,Kiara Patel Group,310.44,8.0,19.0,9.0,8596.0,High Value,At Risk,High Value
+C1190,Myra Joshi Solutions,342.28,10.0,53.0,18.0,24468.0,High Value,At Risk,High Value
+C1191,Sai Patel Industries,68.6,6.0,246.0,131.0,13042.0,Regular,Not At Risk,Regular
+C1192,Deepak Nair Technologies,84.28,10.0,62.0,32.0,22798.0,Regular,At Risk,At Risk
+C1193,Diya Menon Systems,278.6,6.0,18.0,10.0,5062.0,Regular,At Risk,At Risk
+C1194,Zoya Bose Group,3957.3599999999997,10.0,105.0,62.0,7975.0,High Value,Not At Risk,High Value
+C1195,Aman Gupta Labs,2578.28,10.0,224.0,120.0,20385.0,High Value,Not At Risk,High Value
+C1196,Ananya Singh Industries,99.96,14.0,6.0,2.0,3590.0,Regular,At Risk,At Risk
+C1197,Sanjay Menon Industries,88.2,11.0,86.0,49.0,19714.0,Regular,Not At Risk,Regular
+C1198,Ananya Sharma Labs,2218.52,7.0,377.0,179.0,28182.0,High Value,Not At Risk,High Value
+C1199,Aman Singh Labs,278.6,6.0,12.0,5.0,7005.0,Regular,At Risk,At Risk
+C1200,Kavya Rao Industries,60.76,4.0,21.0,7.0,927.0,Regular,At Risk,At Risk
+C1201,Naveen Patel Labs,1858.76,4.0,20.0,9.0,185.0,High Value,At Risk,High Value
+C1202,Karthik Iyer Labs,1112.88,16.0,18.0,6.0,1956.0,High Value,At Risk,High Value
+C1203,Saanvi Reddy Industries,858.28,10.0,36.0,22.0,8114.0,High Value,At Risk,High Value
+C1204,Aman Reddy Systems,2338.44,8.0,333.0,202.0,23455.0,High Value,Not At Risk,High Value
+C1205,Isha Joshi Labs,778.44,8.0,87.0,47.0,9564.0,High Value,Not At Risk,High Value
+C1206,Zoya Gupta Group,738.52,7.0,349.0,199.0,30924.0,High Value,Not At Risk,High Value
+C1207,Sneha Gupta Technologies,310.44,8.0,373.0,186.0,29308.0,High Value,Not At Risk,High Value
+C1208,Deepak Das Group,60.76,4.0,21.0,12.0,10291.0,Regular,At Risk,At Risk
+C1209,Rahul Khan Systems,658.68,5.0,30.0,15.0,6854.0,High Value,At Risk,High Value
+C1210,Deepak Patel Technologies,56.84,3.0,36.0,18.0,5247.0,Regular,At Risk,At Risk
+C1211,Krishna Iyer Solutions,294.52,7.0,52.0,25.0,3102.0,High Value,At Risk,High Value
+C1212,Sai Verma Solutions,538.92,2.0,185.0,106.0,21498.0,High Value,Not At Risk,High Value
+C1213,Nikita Verma Labs,214.92,2.0,17.0,13.0,826.0,Regular,At Risk,At Risk
+C1214,Sneha Sharma Technologies,405.96,14.0,31.0,19.0,4733.0,High Value,At Risk,High Value
+C1215,Zoya Patel Solutions,60.76,4.0,18.0,6.0,4925.0,Regular,At Risk,At Risk
+C1216,Nikita Khan Systems,76.44,8.0,93.0,48.0,20645.0,Regular,Not At Risk,Regular
+C1217,Sai Iyer Industries,1858.76,4.0,159.0,95.0,10986.0,High Value,Not At Risk,High Value
+C1218,Reyansh Joshi Group,84.28,10.0,0.0,0.0,0.0,Regular,At Risk,At Risk
+C1219,Tara Nair Group,160.72,18.0,147.0,80.0,24237.0,Regular,Not At Risk,Regular
+C1220,Diya Rao Solutions,658.68,5.0,261.0,149.0,32557.0,High Value,Not At Risk,High Value
+C1221,Rahul Gupta Solutions,80.36,9.0,108.0,56.0,15668.0,Regular,Not At Risk,Regular
+C1222,Aarav Verma Labs,818.36,9.0,53.0,35.0,2364.0,High Value,At Risk,High Value
+C1223,Vihaan Joshi Industries,278.6,6.0,99.0,61.0,5520.0,Regular,Not At Risk,Regular
+C1224,Isha Patel Technologies,898.2,11.0,44.0,21.0,11157.0,High Value,At Risk,High Value
+C1225,Diya Patel Industries,129.36,10.0,171.0,104.0,23197.0,Regular,Not At Risk,Regular
+C1226,Ishaan Patel Industries,246.76,4.0,159.0,94.0,31828.0,Regular,Not At Risk,Regular
+C1227,Karthik Das Industries,698.6,6.0,32.0,20.0,5699.0,High Value,At Risk,High Value
+C1228,Kiara Sharma Solutions,230.84,3.0,16.0,5.0,6394.0,Regular,At Risk,At Risk
+C1229,Farhan Verma Technologies,72.52,7.0,82.0,49.0,18424.0,Regular,Not At Risk,Regular
+C1230,Ishaan Patel Industries,1009.04,14.0,87.0,44.0,15356.0,High Value,Not At Risk,High Value
+C1231,Aditya Patel Group,246.76,4.0,200.0,104.0,10884.0,Regular,Not At Risk,Regular
+C1232,Rohan Bose Systems,738.52,7.0,36.0,21.0,4919.0,High Value,At Risk,High Value
+C1233,Deepak Patel Labs,578.84,3.0,67.0,33.0,3449.0,High Value,At Risk,High Value
+C1234,Farhan Singh Industries,68.6,6.0,437.0,254.0,31970.0,Regular,Not At Risk,Regular
+C1235,Vivaan Bose Technologies,68.6,6.0,23.0,9.0,6153.0,Regular,At Risk,At Risk
+C1236,Saanvi Rao Industries,72.52,7.0,33.0,21.0,1702.0,Regular,At Risk,At Risk
+C1237,Arun Rao Systems,358.2,11.0,147.0,69.0,4833.0,High Value,Not At Risk,High Value
+C1238,Tara Gupta Technologies,88.2,11.0,138.0,74.0,15363.0,Regular,Not At Risk,Regular
+C1239,Pooja Nair Solutions,1738.84,3.0,39.0,16.0,3607.0,High Value,At Risk,High Value
+C1240,Aadhya Gupta Group,64.68,5.0,0.0,0.0,0.0,Regular,At Risk,At Risk
+C1241,Rohan Iyer Group,2098.6,6.0,201.0,118.0,19031.0,High Value,Not At Risk,High Value
+C1242,Deepak Bose Group,2648.88,16.0,7.0,3.0,2842.0,High Value,At Risk,High Value
+C1243,Aditya Patel Solutions,64.68,5.0,247.0,146.0,5532.0,Regular,Not At Risk,Regular
+C1244,Myra Sharma Industries,72.52,7.0,10.0,6.0,3173.0,Regular,At Risk,At Risk
+C1245,Aadhya Sharma Labs,84.28,10.0,8.0,6.0,515.0,Regular,At Risk,At Risk
+C1246,Aditya Sharma Group,618.76,4.0,212.0,150.0,14175.0,High Value,Not At Risk,High Value
+C1247,Karthik Sharma Technologies,738.52,7.0,52.0,32.0,6475.0,High Value,At Risk,High Value
+C1248,Farhan Bose Solutions,738.52,7.0,118.0,78.0,4751.0,High Value,Not At Risk,High Value
+C1249,Ananya Singh Solutions,698.6,6.0,287.0,148.0,28405.0,High Value,Not At Risk,High Value
+C1250,Sai Rao Industries,1978.68,5.0,149.0,74.0,15122.0,High Value,Not At Risk,High Value
+C1251,Diya Khan Group,818.36,9.0,173.0,102.0,21096.0,High Value,Not At Risk,High Value
+C1252,Meera Sharma Industries,2098.6,6.0,125.0,58.0,11778.0,High Value,Not At Risk,High Value
+C1253,Karthik Rao Solutions,156.8,17.0,42.0,21.0,5143.0,Regular,At Risk,At Risk
+C1254,Rohan Nair Technologies,310.44,8.0,164.0,89.0,25481.0,High Value,Not At Risk,High Value
+C1255,Riya Joshi Labs,310.44,8.0,3.0,0.0,1816.0,High Value,At Risk,High Value
+C1256,Sai Gupta Technologies,1978.68,5.0,102.0,53.0,12317.0,High Value,Not At Risk,High Value
+C1257,Vihaan Patel Solutions,1858.76,4.0,30.0,12.0,2143.0,High Value,At Risk,High Value
+C1258,Myra Verma Technologies,658.68,5.0,12.0,3.0,5646.0,High Value,At Risk,High Value
+C1259,Priya Reddy Systems,778.44,8.0,65.0,46.0,2354.0,High Value,At Risk,High Value
+C1260,Meera Iyer Technologies,818.36,7.0,191.0,101.0,27285.0,High Value,Not At Risk,High Value
+C1261,Reyansh Menon Labs,1978.68,5.0,57.0,31.0,8191.0,High Value,At Risk,High Value
+C1262,Arun Joshi Group,342.28,10.0,145.0,86.0,6602.0,High Value,Not At Risk,High Value
+C1263,Deepak Reddy Industries,2338.44,8.0,0.0,0.0,0.0,High Value,At Risk,High Value
+C1264,Aarav Nair Solutions,698.6,6.0,120.0,58.0,5937.0,High Value,Not At Risk,High Value
+C1265,Aditya Reddy Solutions,294.52,7.0,63.0,34.0,12507.0,High Value,At Risk,High Value
+C1266,Arun Nair Systems,342.28,10.0,315.0,176.0,20437.0,High Value,Not At Risk,High Value
+C1267,Nikita Rao Industries,2098.6,6.0,39.0,22.0,3648.0,High Value,At Risk,High Value
+C1268,Deepak Patel Industries,80.36,9.0,248.0,145.0,15619.0,Regular,Not At Risk,Regular
+C1269,Aadhya Patel Solutions,294.52,7.0,84.0,44.0,8242.0,High Value,Not At Risk,High Value
+C1270,Farhan Menon Group,294.52,7.0,114.0,69.0,7061.0,High Value,Not At Risk,High Value
+C1271,Myra Gupta Industries,294.52,7.0,18.0,14.0,5502.0,High Value,At Risk,High Value
+C1272,Pooja Joshi Industries,2218.52,7.0,38.0,15.0,10902.0,High Value,At Risk,High Value
+C1273,Ananya Menon Systems,818.36,9.0,175.0,83.0,33715.0,High Value,Not At Risk,High Value
+C1274,Aadhya Khan Systems,342.28,10.0,31.0,9.0,1180.0,High Value,At Risk,High Value
+C1275,Nikita Verma Technologies,1499.0,1.0,139.0,91.0,11043.0,High Value,Not At Risk,High Value
+C1276,Myra Reddy Industries,246.76,4.0,55.0,31.0,4277.0,Regular,At Risk,At Risk
+C1277,Kiara Gupta Industries,294.52,8.0,89.0,41.0,16519.0,High Value,Not At Risk,High Value
+C1278,Meera Sharma Industries,72.52,7.0,30.0,16.0,7009.0,Regular,At Risk,At Risk
+C1279,Divya Verma Solutions,80.36,9.0,29.0,12.0,3445.0,Regular,At Risk,At Risk
+C1280,Aman Patel Systems,278.6,6.0,160.0,84.0,11578.0,Regular,Not At Risk,Regular
+C1281,Farhan Das Group,2098.6,6.0,17.0,4.0,6342.0,High Value,At Risk,High Value
+C1282,Nikita Menon Solutions,1978.68,5.0,11.0,7.0,333.0,High Value,At Risk,High Value
+C1283,Kiara Nair Industries,84.28,10.0,109.0,48.0,33201.0,Regular,Not At Risk,Regular
+C1284,Zoya Das Group,1978.68,5.0,23.0,16.0,567.0,High Value,At Risk,High Value
+C1285,Isha Verma Solutions,778.44,8.0,44.0,13.0,25716.0,High Value,At Risk,High Value
+C1286,Krishna Khan Solutions,326.36,9.0,108.0,64.0,15708.0,High Value,Not At Risk,High Value
+C1287,Farhan Nair Industries,230.84,3.0,35.0,9.0,9304.0,Regular,At Risk,At Risk
+C1288,Kiara Das Labs,1618.92,2.0,65.0,37.0,4303.0,High Value,At Risk,High Value
+C1289,Karthik Patel Systems,262.68,5.0,99.0,53.0,18126.0,Regular,Not At Risk,Regular
+C1290,Riya Singh Systems,2578.28,10.0,429.0,263.0,19734.0,High Value,Not At Risk,High Value
+C1291,Diya Rao Systems,60.76,4.0,38.0,32.0,1083.0,Regular,At Risk,At Risk
+C1292,Divya Sharma Technologies,262.68,5.0,148.0,94.0,7588.0,Regular,Not At Risk,Regular
+C1293,Tara Joshi Systems,278.6,6.0,26.0,12.0,7099.0,Regular,At Risk,At Risk
+C1294,Meera Singh Group,358.2,11.0,54.0,32.0,5014.0,High Value,At Risk,High Value
+C1295,Aman Joshi Group,278.6,6.0,34.0,19.0,10257.0,Regular,At Risk,At Risk
+C1296,Saanvi Khan Group,658.68,5.0,270.0,167.0,35849.0,High Value,Not At Risk,High Value
+C1297,Naveen Sharma Technologies,698.6,6.0,249.0,129.0,21600.0,High Value,Not At Risk,High Value
+C1298,Riya Menon Systems,56.84,3.0,86.0,52.0,33580.0,Regular,Not At Risk,Regular
+C1299,Rahul Iyer Group,374.12,12.0,90.0,39.0,15257.0,High Value,Not At Risk,High Value
+C1300,Krishna Sharma Solutions,278.6,6.0,380.0,229.0,34583.0,Regular,Not At Risk,Regular
+C1301,Sanjay Verma Industries,230.84,3.0,11.0,2.0,6813.0,Regular,At Risk,At Risk
+C1302,Ishaan Singh Industries,778.44,8.0,77.0,50.0,8309.0,High Value,At Risk,High Value
+C1303,Farhan Khan Systems,72.52,7.0,114.0,56.0,25160.0,Regular,Not At Risk,Regular
+C1304,Karthik Sharma Group,64.68,5.0,67.0,40.0,19245.0,Regular,At Risk,At Risk
+C1305,Ananya Reddy Solutions,262.68,7.0,3.0,1.0,1195.0,Regular,At Risk,At Risk
+C1306,Ananya Nair Systems,72.52,7.0,58.0,25.0,1996.0,Regular,At Risk,At Risk
+C1307,Rahul Reddy Technologies,278.6,6.0,318.0,207.0,23183.0,Regular,Not At Risk,Regular
+C1308,Naveen Gupta Labs,2458.36,9.0,20.0,9.0,8021.0,High Value,At Risk,High Value
+C1309,Diya Gupta Labs,80.36,9.0,183.0,107.0,29738.0,Regular,Not At Risk,Regular
+C1310,Riya Das Technologies,778.44,8.0,45.0,20.0,13369.0,High Value,At Risk,High Value
+C1311,Kavya Rao Labs,64.68,5.0,9.0,3.0,3374.0,Regular,At Risk,At Risk
+C1312,Saanvi Bose Labs,326.36,9.0,61.0,27.0,15900.0,High Value,At Risk,High Value
+C1313,Krishna Joshi Solutions,1978.68,5.0,315.0,176.0,17519.0,High Value,Not At Risk,High Value
+C1314,Isha Joshi Industries,310.44,8.0,328.0,181.0,27367.0,High Value,Not At Risk,High Value
+C1315,Arjun Das Solutions,52.92,2.0,92.0,54.0,7901.0,Regular,Not At Risk,Regular
+C1316,Deepak Reddy Group,342.28,10.0,56.0,24.0,23575.0,High Value,At Risk,High Value
+C1317,Divya Patel Systems,326.36,9.0,29.0,15.0,6862.0,High Value,At Risk,High Value
+C1318,Vihaan Sharma Labs,64.68,5.0,130.0,70.0,15540.0,Regular,Not At Risk,Regular
+C1319,Divya Bose Group,294.52,6.0,59.0,32.0,7850.0,High Value,At Risk,High Value
+C1320,Vihaan Nair Labs,326.36,9.0,108.0,63.0,8942.0,High Value,Not At Risk,High Value
+C1321,Nikita Sharma Group,68.6,6.0,58.0,34.0,6043.0,Regular,At Risk,At Risk
+C1322,Arjun Khan Systems,294.52,7.0,187.0,103.0,14926.0,High Value,Not At Risk,High Value
+C1323,Pooja Verma Labs,68.6,6.0,119.0,71.0,25779.0,Regular,Not At Risk,Regular
+C1324,Karthik Reddy Technologies,2458.36,9.0,464.0,281.0,27156.0,High Value,Not At Risk,High Value
+C1325,Ishaan Reddy Group,2338.44,8.0,91.0,48.0,20107.0,High Value,Not At Risk,High Value
+C1326,Naveen Sharma Labs,76.44,8.0,375.0,200.0,28413.0,Regular,Not At Risk,Regular
+C1327,Nikita Menon Group,2098.6,6.0,281.0,180.0,35133.0,High Value,Not At Risk,High Value
+C1328,Karthik Nair Labs,342.28,10.0,115.0,72.0,6444.0,High Value,Not At Risk,High Value
+C1329,Kavya Das Group,76.44,8.0,23.0,8.0,12493.0,Regular,At Risk,At Risk
+C1330,Ananya Sharma Group,538.92,2.0,61.0,25.0,21236.0,High Value,At Risk,High Value
+C1331,Krishna Bose Industries,310.44,8.0,162.0,87.0,11401.0,High Value,Not At Risk,High Value
+C1332,Diya Singh Labs,618.76,4.0,47.0,19.0,3926.0,High Value,At Risk,High Value
+C1333,Aditya Nair Systems,278.6,6.0,156.0,88.0,10453.0,Regular,Not At Risk,Regular
+C1334,Sai Menon Group,1978.68,5.0,0.0,0.0,0.0,High Value,At Risk,High Value
+C1335,Karthik Rao Systems,778.44,8.0,371.0,225.0,32222.0,High Value,Not At Risk,High Value
+C1336,Sai Reddy Industries,658.68,5.0,135.0,68.0,24018.0,High Value,Not At Risk,High Value
+C1337,Rohan Patel Systems,230.84,3.0,24.0,7.0,8117.0,Regular,At Risk,At Risk
+C1338,Aadhya Singh Systems,342.28,10.0,324.0,185.0,25562.0,High Value,Not At Risk,High Value
+C1339,Nikita Iyer Group,278.6,6.0,199.0,117.0,39221.0,Regular,Not At Risk,Regular
+C1340,Zoya Joshi Technologies,88.2,11.0,167.0,105.0,12606.0,Regular,Not At Risk,Regular
+C1341,Isha Singh Group,2218.52,7.0,343.0,184.0,22093.0,High Value,Not At Risk,High Value
+C1342,Divya Joshi Systems,76.44,8.0,133.0,75.0,30750.0,Regular,Not At Risk,Regular
+C1343,Isha Iyer Technologies,72.52,7.0,6.0,2.0,646.0,Regular,At Risk,At Risk
+C1344,Naveen Verma Technologies,262.68,5.0,327.0,180.0,19815.0,Regular,Not At Risk,Regular
+C1345,Rahul Gupta Group,294.52,5.0,260.0,129.0,7106.0,High Value,Not At Risk,High Value
+C1346,Krishna Sharma Group,326.36,9.0,56.0,45.0,2600.0,High Value,At Risk,High Value
+C1347,Deepak Khan Solutions,72.52,7.0,260.0,134.0,19501.0,Regular,Not At Risk,Regular
+C1348,Aditya Menon Labs,618.76,4.0,91.0,48.0,17783.0,High Value,Not At Risk,High Value
+C1349,Krishna Joshi Systems,2458.36,9.0,77.0,45.0,13157.0,High Value,At Risk,High Value
+C1350,Deepak Gupta Labs,1978.68,5.0,340.0,198.0,13178.0,High Value,Not At Risk,High Value
+C1351,Priya Gupta Systems,76.44,8.0,100.0,50.0,25714.0,Regular,Not At Risk,Regular
+C1352,Aditya Patel Industries,2578.28,10.0,95.0,60.0,9294.0,High Value,Not At Risk,High Value
+C1353,Farhan Gupta Labs,68.6,6.0,0.0,0.0,0.0,Regular,At Risk,At Risk
+C1354,Vivaan Reddy Group,99.96,14.0,378.0,185.0,28945.0,Regular,Not At Risk,Regular
+C1355,Nikita Reddy Technologies,294.52,11.0,26.0,12.0,549.0,High Value,At Risk,High Value
+C1356,Divya Joshi Industries,618.76,4.0,91.0,51.0,15046.0,High Value,Not At Risk,High Value
+C1357,Saanvi Menon Labs,262.68,5.0,233.0,134.0,27064.0,Regular,Not At Risk,Regular
+C1358,Diya Das Systems,64.68,5.0,179.0,92.0,15750.0,Regular,Not At Risk,Regular
+C1359,Aman Rao Group,658.68,5.0,0.0,0.0,0.0,High Value,At Risk,High Value
+C1360,Deepak Gupta Group,60.76,4.0,31.0,15.0,4024.0,Regular,At Risk,At Risk
+C1361,Meera Khan Systems,658.68,5.0,57.0,21.0,2829.0,High Value,At Risk,High Value
+C1362,Aditya Patel Solutions,64.68,5.0,272.0,136.0,26479.0,Regular,Not At Risk,Regular
+C1363,Pooja Gupta Group,310.44,8.0,34.0,16.0,5301.0,High Value,At Risk,High Value
+C1364,Aarav Bose Labs,1978.68,5.0,159.0,78.0,8615.0,High Value,Not At Risk,High Value
+C1365,Diya Joshi Industries,778.44,8.0,141.0,81.0,9231.0,High Value,Not At Risk,High Value
+C1366,Kavya Verma Labs,278.6,6.0,107.0,59.0,7097.0,Regular,Not At Risk,Regular
+C1367,Kiara Gupta Industries,76.44,8.0,30.0,19.0,1044.0,Regular,At Risk,At Risk
+C1368,Priya Singh Solutions,52.92,2.0,59.0,31.0,3218.0,Regular,At Risk,At Risk
+C1369,Meera Reddy Industries,2098.6,6.0,39.0,27.0,1702.0,High Value,At Risk,High Value
+C1370,Arun Joshi Group,658.68,5.0,117.0,56.0,20215.0,High Value,Not At Risk,High Value
+C1371,Nikita Singh Technologies,262.68,5.0,213.0,114.0,11450.0,Regular,Not At Risk,Regular
+C1372,Isha Joshi Group,294.52,7.0,135.0,68.0,10411.0,High Value,Not At Risk,High Value
+C1373,Naveen Patel Group,60.76,4.0,259.0,145.0,17279.0,Regular,Not At Risk,Regular
+C1374,Ananya Joshi Industries,778.44,8.0,182.0,89.0,16074.0,High Value,Not At Risk,High Value
+C1375,Tara Bose Group,68.6,6.0,65.0,32.0,14998.0,Regular,At Risk,At Risk
+C1376,Vivaan Khan Systems,310.44,8.0,390.0,237.0,18075.0,High Value,Not At Risk,High Value
+C1377,Zoya Bose Technologies,698.6,6.0,61.0,28.0,5568.0,High Value,At Risk,High Value
+C1378,Sneha Reddy Solutions,383.20000000000005,12.0,23.0,7.0,12094.0,High Value,At Risk,High Value
+C1379,Pooja Rao Labs,60.76,4.0,153.0,91.0,17385.0,Regular,Not At Risk,Regular
+C1380,Ishaan Reddy Labs,1618.92,2.0,98.0,56.0,4795.0,High Value,Not At Risk,High Value
+C1381,Diya Nair Systems,2218.52,7.0,122.0,75.0,19174.0,High Value,Not At Risk,High Value
+C1382,Sai Singh Systems,68.6,6.0,57.0,41.0,2293.0,Regular,At Risk,At Risk
+C1383,Myra Patel Solutions,92.12,12.0,15.0,7.0,4430.0,Regular,At Risk,At Risk
+C1384,Arjun Joshi Technologies,2098.6,6.0,61.0,37.0,10271.0,High Value,At Risk,High Value
+C1385,Vihaan Das Group,2218.52,7.0,3.0,1.0,3759.0,High Value,At Risk,High Value
+C1386,Naveen Singh Technologies,72.52,7.0,383.0,202.0,37376.0,Regular,Not At Risk,Regular
+C1387,Arun Nair Solutions,310.44,8.0,198.0,120.0,8754.0,High Value,Not At Risk,High Value
+C1388,Sai Bose Group,310.44,8.0,205.0,105.0,19246.0,High Value,Not At Risk,High Value
+C1389,Meera Sharma Industries,738.52,7.0,137.0,66.0,14494.0,High Value,Not At Risk,High Value
+C1390,Rahul Reddy Labs,278.6,6.0,18.0,5.0,2927.0,Regular,At Risk,At Risk
+C1391,Nikita Verma Industries,68.6,6.0,30.0,13.0,17849.0,Regular,At Risk,At Risk
+C1392,Ananya Rao Industries,64.68,5.0,390.0,239.0,20619.0,Regular,Not At Risk,Regular
+C1393,Sneha Bose Technologies,278.6,6.0,335.0,183.0,12121.0,Regular,Not At Risk,Regular
+C1394,Sai Menon Group,278.6,6.0,269.0,143.0,21963.0,Regular,Not At Risk,Regular
+C1395,Deepak Patel Labs,3177.88,15.0,24.0,15.0,1661.0,High Value,At Risk,High Value
+C1396,Sai Joshi Systems,326.36,9.0,67.0,31.0,4077.0,High Value,At Risk,High Value
+C1397,Divya Reddy Group,938.12,12.0,13.0,8.0,16.0,High Value,At Risk,High Value
+C1398,Zoya Rao Group,326.36,9.0,41.0,15.0,9588.0,High Value,At Risk,High Value
+C1399,Aman Patel Technologies,658.68,5.0,82.0,54.0,6783.0,High Value,Not At Risk,High Value
+C1400,Arjun Bose Solutions,294.52,7.0,32.0,21.0,5950.0,High Value,At Risk,High Value
+C1401,Naveen Gupta Solutions,342.28,10.0,27.0,10.0,3975.0,High Value,At Risk,High Value
+C1402,Rohan Reddy Industries,262.68,5.0,13.0,10.0,849.0,Regular,At Risk,At Risk
+C1403,Sai Khan Labs,278.6,6.0,81.0,58.0,4055.0,Regular,At Risk,At Risk
+C1404,Rahul Nair Labs,778.44,8.0,97.0,62.0,21353.0,High Value,Not At Risk,High Value
+C1405,Deepak Gupta Labs,246.76,4.0,40.0,26.0,5040.0,Regular,At Risk,At Risk
+C1406,Vihaan Joshi Group,278.6,6.0,56.0,28.0,6046.0,Regular,At Risk,At Risk
+C1407,Meera Gupta Labs,738.52,7.0,58.0,37.0,5500.0,High Value,At Risk,High Value
+C1408,Aarav Reddy Labs,68.6,6.0,115.0,63.0,18026.0,Regular,Not At Risk,Regular
+C1409,Saanvi Iyer Industries,68.6,6.0,77.0,46.0,6868.0,Regular,At Risk,At Risk
+C1410,Isha Khan Technologies,326.36,9.0,62.0,37.0,1973.0,High Value,At Risk,High Value
+C1411,Saanvi Verma Technologies,262.68,5.0,0.0,0.0,0.0,Regular,At Risk,At Risk
+C1412,Farhan Verma Solutions,2534.8,17.0,38.0,19.0,6903.0,High Value,At Risk,High Value
+C1413,Kiara Joshi Solutions,246.76,4.0,113.0,57.0,20979.0,Regular,Not At Risk,Regular
+C1414,Zoya Joshi Solutions,326.36,9.0,78.0,43.0,4052.0,High Value,At Risk,High Value
+C1415,Sneha Rao Group,778.44,8.0,92.0,51.0,16485.0,High Value,Not At Risk,High Value
+C1416,Sneha Sharma Systems,658.68,5.0,410.0,204.0,34294.0,High Value,Not At Risk,High Value
+C1417,Naveen Patel Technologies,326.36,9.0,15.0,5.0,4770.0,High Value,At Risk,High Value
+C1418,Naveen Patel Technologies,326.36,9.0,96.0,55.0,16747.0,High Value,Not At Risk,High Value
+C1419,Diya Nair Industries,294.52,7.0,33.0,22.0,2478.0,High Value,At Risk,High Value
+C1420,Arun Gupta Technologies,278.6,6.0,120.0,59.0,24182.0,Regular,Not At Risk,Regular
