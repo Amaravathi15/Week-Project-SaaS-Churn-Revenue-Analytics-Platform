@@ -1,0 +1,1107 @@
+
+
+import pandas as pd
+import os
+
+# 1. LOAD FILE
+
+def load_file(file_path):
+    """
+    Load a CSV file with exception handling.
+    """
+
+    try:
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"File not found: {file_path}")
+
+        df = pd.read_csv(file_path)
+
+        if df.empty:
+            raise ValueError(f"File is empty: {file_path}")
+
+        print(f"Loaded successfully: {file_path}")
+        return df
+
+    except FileNotFoundError as e:
+        print("ERROR:", e)
+        return None
+
+    except pd.errors.EmptyDataError:
+        print(f"ERROR: File contains no data: {file_path}")
+        return None
+
+    except pd.errors.ParserError:
+        print(f"ERROR: Malformed CSV file: {file_path}")
+        return None
+
+    except Exception as e:
+        print(f"ERROR while loading file: {e}")
+        return None
+
+
+    # 2. VALIDATE SHAPE
+
+def validate_shape(df, expected_shape):
+    """
+    Validate number of rows and columns.
+    """
+
+    if df.shape != expected_shape:
+        raise ValueError(
+            f"Shape mismatch. Expected {expected_shape}, "
+            f"but got {df.shape}"
+        )
+
+    print("Shape validation: PASS")
+
+
+# 3. VALIDATE COLUMNS
+
+
+def validate_columns(df, expected_columns):
+    """
+    Validate column names.
+    """
+
+    actual_columns = list(df.columns)
+
+    if actual_columns != expected_columns:
+        raise ValueError(
+            f"Column mismatch.\n"
+            f"Expected: {expected_columns}\n"
+            f"Actual: {actual_columns}"
+        )
+
+    print("Column validation: PASS")
+
+    # 4. VALIDATE DATA TYPES
+
+def validate_dtypes(df, expected_dtypes):
+    """
+    Validate data types of each column.
+    """
+
+    for column, expected_type in expected_dtypes.items():
+
+        actual_type = str(df[column].dtype)
+
+        # Accept both object and str for text columns
+        if expected_type == "object" and actual_type in ["object", "str"]:
+            continue
+
+
+        if actual_type != expected_type:
+            raise TypeError(
+                f"{column}: expected {expected_type}, "
+                f"but got {actual_type}"
+            )
+
+    print("Dtype validation: PASS")
+
+    # 5. VALIDATE COMPLETE FILE
+
+
+def validate_file(df, expected_shape, expected_columns, expected_dtypes):
+    """
+    Run all validations before processing.
+    """
+
+    validate_shape(df, expected_shape)
+
+    validate_columns(df, expected_columns)
+
+    validate_dtypes(df, expected_dtypes)
+
+    print("All validations passed.\n")
+
+
+    # FILE 1 — CUSTOMERS
+
+customers_path = "saas_customers.csv"
+
+customers = load_file(customers_path)
+
+if customers is not None:
+
+    customers_columns = [
+        "CustomerID",
+        "CompanyName",
+        "Industry",
+        "Country",
+        "City",
+        "EmployeeCount",
+        "SignupDate",
+        "AcquisitionChannel"
+    ]
+
+    customers_dtypes = {
+        "CustomerID": "str",
+        "CompanyName": "str",
+        "Industry": "str",
+        "Country": "str",
+        "City": "str",
+        "EmployeeCount": "float64",
+        "SignupDate": "str",
+        "AcquisitionChannel": "str"
+    }
+
+    validate_file(
+        customers,
+        (425, 8),
+        customers_columns,
+        customers_dtypes
+    )
+
+
+# FILE 2 — SUBSCRIPTIONS
+
+subscriptions_path = "saas_subscriptions.csv"
+
+subscriptions = load_file(subscriptions_path)
+
+if subscriptions is not None:
+
+    subscriptions_columns = [
+        "SubscriptionID",
+        "CustomerID",
+        "PlanName",
+        "BillingTerm",
+        "Seats",
+        "MRR",
+        "StartDate",
+        "EndDate",
+        "Status"
+    ]
+
+    subscriptions_dtypes = {
+        "SubscriptionID": "str",
+        "CustomerID": "str",
+        "PlanName": "str",
+        "BillingTerm": "str",
+        "Seats": "float64",
+        "MRR": "float64",
+        "StartDate": "str",
+        "EndDate": "str",
+        "Status": "str"
+    }
+
+    validate_file(
+        subscriptions,
+        (448, 9),
+        subscriptions_columns,
+        subscriptions_dtypes
+    )
+
+# FILE 3 — USAGE
+
+
+usage_path ="saas_usage.csv"
+
+usage = load_file(usage_path)
+
+if usage is not None:
+
+    usage_columns = [
+        "CustomerID",
+        "SubscriptionID",
+        "Month",
+        "Logins",
+        "ActiveUsers",
+        "FeatureUsed",
+        "APICalls",
+        "SessionMinutes"
+    ]
+
+    usage_dtypes = {
+        "CustomerID": "object",
+        "SubscriptionID": "object",
+        "Month": "object",
+        "Logins": "int64",
+        "ActiveUsers": "float64",
+        "FeatureUsed": "object",
+        "APICalls": "int64",
+        "SessionMinutes": "float64"
+    }
+
+    validate_file(
+        usage,
+        (4724, 8),
+        usage_columns,
+        usage_dtypes
+    )
+
+# FILE 4 — TICKETS
+
+
+tickets_path = "saas_tickets.csv"
+
+tickets = load_file(tickets_path)
+
+if tickets is not None:
+
+    tickets_columns = [
+        "TicketID",
+        "CustomerID",
+        "OpenedDate",
+        "Category",
+        "Priority",
+        "ResolutionHours",
+        "SatisfactionScore"
+    ]
+
+    tickets_dtypes = {
+        "TicketID": "str",
+        "CustomerID": "str",
+        "OpenedDate": "str",
+        "Category": "str",
+        "Priority": "str",
+        "ResolutionHours": "float64",
+        "SatisfactionScore": "float64"
+    }
+
+    validate_file(
+        tickets,
+        (1409, 7),
+        tickets_columns,
+        tickets_dtypes
+    )
+
+# MODULE 2 — DATA AUDIT & CLEANING
+
+    
+# 1. STORE ALL TABLES
+
+tables = {
+    "Customers": customers,
+    "Subscriptions": subscriptions,
+    "Usage": usage,
+    "Tickets": tickets
+}
+
+ # 2. DATA AUDIT FUNCTION
+
+def audit_table(df, table_name):
+        """
+         Audit:
+        - shape
+        - dtypes
+        - missing values
+        - duplicate rows
+        - unique values for every text column
+        """
+
+        print("\n" + "=" * 70)
+        print(f"AUDIT — {table_name}")
+        print("=" * 70)
+
+        # 1. Shape
+        print("\nSHAPE:")
+        print(df.shape)
+
+        # 2. Data types
+        print("\nDATA TYPES:")
+        print(df.dtypes)
+
+        # 3. Missing values
+        print("\nMISSING VALUES:")
+        missing = df.isna().sum()
+
+        if missing.sum() == 0:
+          print("No missing values.")
+        else:
+         print(missing[missing > 0])
+
+        # 4. Duplicate rows
+        print("\nDUPLICATE ROWS:")
+        print(df.duplicated().sum())
+
+        # 5. Unique values for text columns
+        print("\nUNIQUE VALUES — TEXT COLUMNS:")
+
+        text_columns = df.select_dtypes(include=["object", "string"]).columns
+
+        for column in text_columns:
+            print(f"\n{column}:")
+            print(df[column].dropna().unique())
+
+
+# 3. BEFORE-CLEANING AUDIT
+
+print("\n\n" + "#" * 80)
+print("BEFORE CLEANING AUDIT")
+print("#" * 80)
+
+for name, df in tables.items():
+    audit_table(df, name)
+
+
+# 4. CLEANING LOG
+
+cleaning_log = []
+def add_log(table, issue, rows_affected, action, why): 
+    cleaning_log.append({
+       "Table": table,
+       "Issue": issue, 
+       "Rows Affected": rows_affected,
+       "Action": action, 
+       "Why": why 
+      })
+    
+
+
+# 5. STANDARDISE TEXT COLUMNS
+
+# CUSTOMERS
+
+customer_text_columns = [ 
+    "CustomerID", 
+    "CompanyName",
+    "Industry", 
+    "Country",
+    "City", 
+    "AcquisitionChannel"
+  ]
+
+for column in customer_text_columns: 
+  customers[column] = customers[column].astype("string").str.strip()
+
+# CustomerID should always be uppercase
+customers["CustomerID"] = customers["CustomerID"].str.upper()
+
+# Standardise categorical text
+customers["Industry"] = customers["Industry"].str.title()
+
+# Country requires explicit mapping because UK/UAE/USA should remain standard abbreviations.
+
+country_map = { 
+    "india": "India", 
+    "uk": "UK",
+    "usa": "USA", 
+    "uae": "UAE",
+    "singapore": "Singapore" 
+    }
+customers["Country"] = ( 
+    customers["Country"] 
+    .str.lower() 
+    .replace(country_map)
+    .str.strip()
+    )
+
+#handle the "SignupDate" date separately:
+
+customers["SignupDate"] = pd.to_datetime(
+    customers["SignupDate"],
+    errors="coerce"
+)
+
+add_log(
+    "Customers", 
+    "Inconsistent text spacing/capitalisation",
+    len(customers),
+    "Stripped whitespace and standardised categorical text",
+    "Ensures equivalent text values are represented consistently."
+     )
+
+
+# SUBSCRIPTIONS
+
+subscription_text_columns = [
+    "SubscriptionID",
+    "CustomerID",
+    "PlanName",
+    "BillingTerm",
+    "Status"
+]
+
+# Strip whitespace
+for column in subscription_text_columns:
+    subscriptions[column] = (subscriptions[column] .astype("string") .str.strip())
+
+# Standardise IDs
+subscriptions["SubscriptionID"] = subscriptions["SubscriptionID"].str.upper()
+subscriptions["CustomerID"] = subscriptions["CustomerID"].str.upper()
+
+# Standardise categorical text
+subscriptions["PlanName"] = subscriptions["PlanName"].str.title()
+subscriptions["BillingTerm"] = subscriptions["BillingTerm"].str.title()
+subscriptions["Status"] = subscriptions["Status"].str.title()
+
+# Convert date columns separately
+subscriptions["StartDate"] = pd.to_datetime(
+    subscriptions["StartDate"],
+    errors="coerce"
+)
+
+subscriptions["EndDate"] = pd.to_datetime(
+    subscriptions["EndDate"],
+    errors="coerce"
+)
+
+# Cleaning log
+add_log(
+    "Subscriptions",
+    "Inconsistent text spacing/capitalisation",
+    len(subscriptions),
+    "Stripped whitespace, standardised IDs and categorical text, and converted date columns",
+    "Ensures consistent IDs/categories and correct date data types."
+)
+
+
+# USAGE
+
+usage_text_columns = [
+    "CustomerID",
+    "SubscriptionID",
+    "Month",
+    "FeatureUsed"
+]
+
+# Standardize text columns
+for column in usage_text_columns:
+    usage[column] = (
+        usage[column]
+        .astype("string")
+        .str.strip()
+    )
+
+# Standardize IDs
+usage["CustomerID"] = usage["CustomerID"].str.upper()
+usage["SubscriptionID"] = usage["SubscriptionID"].str.upper()
+
+
+# Standardize FeatureUsed
+feature_map = {
+    "api": "API",
+    "alerts": "Alerts",
+    "dashboard": "Dashboard",
+    "export": "Export",
+    "integrations": "Integrations",
+    "reports": "Reports"
+}
+
+usage["FeatureUsed"] = (
+    usage["FeatureUsed"]
+    .str.lower()
+    .map(feature_map)
+)
+
+
+# Cleaning log
+add_log(
+    "Usage",
+    "Inconsistent FeatureUsed casing",
+    len(usage),
+    "Standardised FeatureUsed categories",
+    "Prevents categories such as API/api and Dashboard/dashboard from being treated separately."
+)
+
+# TICKETS
+
+ticket_text_columns = [
+    "TicketID",
+    "CustomerID",
+    "OpenedDate",
+    "Category",
+    "Priority"
+]
+
+# Standardize text columns
+for column in ticket_text_columns:
+    tickets[column] = (
+        tickets[column]
+        .astype("string")
+        .str.strip()
+    )
+
+# Standardize IDs
+tickets["TicketID"] = tickets["TicketID"].str.upper()
+tickets["CustomerID"] = tickets["CustomerID"].str.upper()
+
+# Standardize Category and Priority
+tickets["Category"] = tickets["Category"].str.title()
+tickets["Priority"] = tickets["Priority"].str.title()
+
+
+# Cleaning log
+add_log(
+    "Tickets",
+    "Inconsistent Priority casing",
+    len(tickets),
+    "Standardised Priority values",
+    "Prevents High/high and Critical/CRITICAL from becoming separate categories."
+)
+
+# 6. HANDLE MISSING VALUES INDIVIDUALLY
+
+# Customers
+# Industry: categorical field.
+# Missing values cannot safely be inferred.
+
+industry_missing = customers["Industry"].isna().sum()
+
+customers["Industry"] = customers["Industry"].fillna("Unknown")
+
+add_log(
+    "Customers",
+    "Missing Industry",
+    industry_missing,
+    "Replaced missing values with 'Unknown'",
+    "Industry is categorical and the original value cannot be reliably inferred."
+)
+
+
+# AcquisitionChannel
+acquisition_missing = customers["AcquisitionChannel"].isna().sum()
+
+customers["AcquisitionChannel"] = (
+    customers["AcquisitionChannel"].fillna("Unknown")
+)
+
+add_log(
+    "Customers",
+    "Missing AcquisitionChannel",
+    acquisition_missing,
+    "Replaced missing values with 'Unknown'",
+    "The acquisition source cannot be inferred safely from other columns."
+)
+
+# EmployeeCount
+
+
+employee_missing = customers["EmployeeCount"].isna().sum()
+
+employee_median = customers["EmployeeCount"].median()
+
+customers["EmployeeCount"] = (
+    customers["EmployeeCount"].fillna(employee_median)
+)
+
+add_log(
+    "Customers",
+    "Missing EmployeeCount",
+    employee_missing,
+    f"Replaced missing values with median ({employee_median})",
+    "EmployeeCount is numeric; the median is less affected by extreme values than the mean."
+)
+
+# ------------------------------------------------------------
+# SUBSCRIPTIONS
+# ------------------------------------------------------------
+
+# Seats
+seats_missing = subscriptions["Seats"].isna().sum()
+seats_median = subscriptions["Seats"].median()
+
+subscriptions["Seats"] = (
+    subscriptions["Seats"].fillna(seats_median)
+)
+
+add_log(
+    "Subscriptions",
+    "Missing Seats",
+    seats_missing,
+    f"Replaced missing values with median ({seats_median})",
+    "Seats is numeric and the median is less sensitive to extreme values than the mean."
+)
+
+
+# MRR
+mrr_missing = subscriptions["MRR"].isna().sum()
+mrr_median = subscriptions["MRR"].median()
+
+subscriptions["MRR"] = (
+    subscriptions["MRR"].fillna(mrr_median)
+)
+
+add_log(
+    "Subscriptions",
+    "Missing MRR",
+    mrr_missing,
+    f"Replaced missing values with median ({mrr_median})",
+    "MRR is numeric and the median is less affected by extreme values."
+)
+
+
+# EndDate
+# Missing EndDate is not automatically an error.
+# Active subscriptions may legitimately have no end date.
+
+enddate_missing = subscriptions["EndDate"].isna().sum()
+
+add_log(
+    "Subscriptions",
+    "Missing EndDate",
+    enddate_missing,
+    "Kept missing values",
+    "An active subscription may not have an end date, so the missing value is meaningful."
+)
+
+
+# ------------------------------------------------------------
+# USAGE
+# ------------------------------------------------------------
+
+# ActiveUsers
+active_users_missing = usage["ActiveUsers"].isna().sum()
+active_users_median = usage["ActiveUsers"].median()
+
+usage["ActiveUsers"] = usage["ActiveUsers"].fillna(
+    active_users_median
+)
+
+add_log(
+    "Usage",
+    "Missing ActiveUsers",
+    active_users_missing,
+    f"Replaced missing values with median ({active_users_median})",
+    "ActiveUsers is numeric and the median is less sensitive to extreme values."
+)
+
+
+# SessionMinutes
+session_missing = usage["SessionMinutes"].isna().sum()
+session_median = usage["SessionMinutes"].median()
+
+usage["SessionMinutes"] = usage["SessionMinutes"].fillna(
+    session_median
+)
+
+add_log(
+    "Usage",
+    "Missing SessionMinutes",
+    session_missing,
+    f"Replaced missing values with median ({session_median})",
+    "SessionMinutes is numeric and the median is appropriate for missing observations."
+)
+
+# ------------------------------------------------------------
+# TICKETS
+# ------------------------------------------------------------
+
+# ResolutionHours
+resolution_missing = tickets["ResolutionHours"].isna().sum()
+resolution_median = tickets["ResolutionHours"].median()
+
+tickets["ResolutionHours"] = tickets["ResolutionHours"].fillna(
+    resolution_median
+)
+
+add_log(
+    "Tickets",
+    "Missing ResolutionHours",
+    resolution_missing,
+    f"Replaced missing values with median ({resolution_median})",
+    "ResolutionHours is numeric and the median is less sensitive to extreme values."
+)
+
+
+# SatisfactionScore
+satisfaction_missing = tickets["SatisfactionScore"].isna().sum()
+satisfaction_median = tickets["SatisfactionScore"].median()
+
+tickets["SatisfactionScore"] = tickets["SatisfactionScore"].fillna(
+    satisfaction_median
+)
+
+add_log(
+    "Tickets",
+    "Missing SatisfactionScore",
+    satisfaction_missing,
+    f"Replaced missing values with median ({satisfaction_median})",
+    "SatisfactionScore is numeric and the median provides a robust central replacement."
+)
+
+
+# 7. REMOVE DUPLICATE ROWS
+# ============================================================
+
+for name, df in tables.items():
+
+    duplicate_count = df.duplicated().sum()
+
+    if duplicate_count > 0:
+
+        df.drop_duplicates(inplace=True)
+
+        add_log(
+            name,
+            "Duplicate rows",
+            duplicate_count,
+            "Removed exact duplicate rows",
+            "Duplicate records would cause double-counting during analysis."
+        )
+
+
+
+
+# 8. REFERENTIAL INTEGRITY
+# ============================================================
+
+# Customers is the parent table.
+# Child tables must only contain valid CustomerIDs.
+
+valid_customer_ids = set(
+    customers["CustomerID"].dropna()
+)
+
+
+# ------------------------------------------------------------
+# SUBSCRIPTIONS → CUSTOMERS
+# ------------------------------------------------------------
+
+invalid_subscriptions = ~subscriptions["CustomerID"].isin(
+    valid_customer_ids
+)
+
+subscription_mismatch_count = invalid_subscriptions.sum()
+
+if subscription_mismatch_count > 0:
+
+    subscriptions = subscriptions.loc[
+        ~invalid_subscriptions
+    ].copy()
+
+    add_log(
+        "Subscriptions",
+        "CustomerID referential mismatch",
+        subscription_mismatch_count,
+        "Removed subscriptions whose CustomerID does not exist in Customers",
+        "CustomerID is a foreign key and orphan records cannot be linked to a valid customer."
+    )
+
+
+# ------------------------------------------------------------
+# USAGE → CUSTOMERS
+# ------------------------------------------------------------
+
+invalid_usage_customers = ~usage["CustomerID"].isin(
+    valid_customer_ids
+)
+
+usage_customer_mismatch_count = invalid_usage_customers.sum()
+
+if usage_customer_mismatch_count > 0:
+
+    usage = usage.loc[
+        ~invalid_usage_customers
+    ].copy()
+
+    add_log(
+        "Usage",
+        "CustomerID referential mismatch",
+        usage_customer_mismatch_count,
+        "Removed usage records whose CustomerID does not exist in Customers",
+        "Usage records must belong to a valid customer."
+    )
+
+
+# ------------------------------------------------------------
+# USAGE → SUBSCRIPTIONS
+# ------------------------------------------------------------
+
+valid_subscription_ids = set(
+    subscriptions["SubscriptionID"].dropna()
+)
+
+invalid_usage_subscriptions = ~usage["SubscriptionID"].isin(
+    valid_subscription_ids
+)
+
+usage_subscription_mismatch_count = invalid_usage_subscriptions.sum()
+
+if usage_subscription_mismatch_count > 0:
+
+    usage = usage.loc[
+        ~invalid_usage_subscriptions
+    ].copy()
+
+    add_log(
+        "Usage",
+        "SubscriptionID referential mismatch",
+        usage_subscription_mismatch_count,
+        "Removed usage records whose SubscriptionID does not exist in Subscriptions",
+        "Usage must reference an existing subscription."
+    )
+
+
+# ------------------------------------------------------------
+# TICKETS → CUSTOMERS
+# ------------------------------------------------------------
+
+invalid_tickets = ~tickets["CustomerID"].isin(
+    valid_customer_ids
+)
+
+ticket_mismatch_count = invalid_tickets.sum()
+
+if ticket_mismatch_count > 0:
+
+    tickets = tickets.loc[
+        ~invalid_tickets
+    ].copy()
+
+    add_log(
+        "Tickets",
+        "CustomerID referential mismatch",
+        ticket_mismatch_count,
+        "Removed tickets whose CustomerID does not exist in Customers",
+        "Tickets must belong to a valid customer."
+    )
+
+
+    # ============================================================
+# 9. CONVERT DATE COLUMNS
+# ============================================================
+
+customers["SignupDate"] = pd.to_datetime(
+    customers["SignupDate"],
+    errors="coerce"
+)
+
+subscriptions["StartDate"] = pd.to_datetime(
+    subscriptions["StartDate"],
+    errors="coerce"
+)
+
+subscriptions["EndDate"] = pd.to_datetime(
+    subscriptions["EndDate"],
+    errors="coerce"
+)
+
+usage["Month"] = pd.to_datetime(
+    usage["Month"],
+    errors="coerce"
+)
+
+tickets["OpenedDate"] = pd.to_datetime(
+    tickets["OpenedDate"],
+    errors="coerce"
+)
+
+# ============================================================
+# 10. RESET INDEX AFTER CLEANING
+# ============================================================
+
+customers.reset_index(drop=True, inplace=True)
+subscriptions.reset_index(drop=True, inplace=True)
+usage.reset_index(drop=True, inplace=True)
+tickets.reset_index(drop=True, inplace=True)
+
+
+# ============================================================
+# 11. UPDATE TABLE DICTIONARY
+# ============================================================
+
+tables = {
+    "Customers": customers,
+    "Subscriptions": subscriptions,
+    "Usage": usage,
+    "Tickets": tickets
+}
+
+# 12. AFTER-CLEANING AUDIT
+# ============================================================
+
+print("\n\n" + "#" * 80)
+print("AFTER CLEANING AUDIT")
+print("#" * 80)
+
+for name, df in tables.items():
+    audit_table(df, name)
+
+
+# ============================================================
+# 13. FINAL REFERENTIAL INTEGRITY CHECK
+# ============================================================
+
+print("\n" + "=" * 70)
+print("FINAL REFERENTIAL INTEGRITY CHECK")
+print("=" * 70)
+
+valid_customer_ids = set(customers["CustomerID"])
+valid_subscription_ids = set(subscriptions["SubscriptionID"])
+
+subscription_customer_mismatch = (
+    ~subscriptions["CustomerID"].isin(valid_customer_ids)
+).sum()
+
+usage_customer_mismatch = (
+    ~usage["CustomerID"].isin(valid_customer_ids)
+).sum()
+
+usage_subscription_mismatch = (
+    ~usage["SubscriptionID"].isin(valid_subscription_ids)
+).sum()
+
+ticket_customer_mismatch = (
+    ~tickets["CustomerID"].isin(valid_customer_ids)
+).sum()
+
+print(
+    "Subscriptions → Customers:",
+    subscription_customer_mismatch
+)
+
+print(
+    "Usage → Customers:",
+    usage_customer_mismatch
+)
+
+print(
+    "Usage → Subscriptions:",
+    usage_subscription_mismatch
+)
+
+print(
+    "Tickets → Customers:",
+    ticket_customer_mismatch
+)
+
+if (
+    subscription_customer_mismatch == 0
+    and usage_customer_mismatch == 0
+    and usage_subscription_mismatch == 0
+    and ticket_customer_mismatch == 0
+):
+    print("\nREFERENTIAL INTEGRITY: PASS")
+else:
+    print("\nREFERENTIAL INTEGRITY: FAIL")
+
+
+
+# ============================================================
+# 14. FINAL DUPLICATE CHECK
+# ============================================================
+
+print("\n" + "=" * 70)
+print("FINAL DUPLICATE CHECK")
+print("=" * 70)
+
+all_duplicates_resolved = True
+
+for name, df in tables.items():
+
+    duplicate_count = df.duplicated().sum()
+
+    print(f"{name}: {duplicate_count}")
+
+    if duplicate_count != 0:
+        all_duplicates_resolved = False
+
+if all_duplicates_resolved:
+    print("\nDUPLICATE CHECK: PASS")
+else:
+    print("\nDUPLICATE CHECK: FAIL")
+
+
+# ============================================================
+# 15. FINAL MISSING-VALUE CHECK
+# ============================================================
+
+print("\n" + "=" * 70)
+print("FINAL MISSING-VALUE CHECK")
+print("=" * 70)
+
+all_missing_resolved = True
+
+for name, df in tables.items():
+
+    print(f"\n{name}")
+
+    missing = df.isna().sum()
+
+    remaining_missing = missing[missing > 0]
+
+    if name == "Subscriptions":
+        # EndDate missing values are intentionally retained
+        unexpected_missing = remaining_missing.drop(
+            labels=["EndDate"],
+            errors="ignore"
+        )
+    else:
+        unexpected_missing = remaining_missing
+
+    print("Remaining missing values:")
+    print(remaining_missing)
+
+    if len(unexpected_missing) > 0:
+        all_missing_resolved = False
+
+if all_missing_resolved:
+    print("\nMISSING-VALUE CHECK: PASS")
+else:
+    print("\nMISSING-VALUE CHECK: FAIL")
+
+
+# ============================================================
+# 16. DISPLAY CLEANING LOG
+# ============================================================
+
+cleaning_log_df = pd.DataFrame(cleaning_log)
+
+print("\n\n" + "#" * 80)
+print("DATA CLEANING LOG")
+print("#" * 80)
+
+print(
+    cleaning_log_df.to_string(index=False)
+)
+
+
+# 17. SAVE CLEANED DATA
+# ============================================================
+
+customers.to_csv(
+    "cleaned_saas_customers.csv",
+    index=False
+)
+
+subscriptions.to_csv(
+    "cleaned_saas_subscriptions.csv",
+    index=False
+)
+
+usage.to_csv(
+    "cleaned_saas_usage.csv",
+    index=False
+)
+
+tickets.to_csv(
+    "cleaned_saas_tickets.csv",
+    index=False
+)
+
+cleaning_log_df.to_csv(
+    "data_cleaning_log.csv",
+    index=False
+)
+
+
+# ============================================================
+# 18. VERIFY SAVED FILES
+# ============================================================
+
+import os
+
+saved_files = [
+    "cleaned_saas_customers.csv",
+    "cleaned_saas_subscriptions.csv",
+    "cleaned_saas_usage.csv",
+    "cleaned_saas_tickets.csv",
+    "data_cleaning_log.csv"
+]
+
+print("\n" + "=" * 70)
+print("SAVED FILE VERIFICATION")
+print("=" * 70)
+
+for file_path in saved_files:
+    if os.path.exists(file_path):
+        print(f"PASS: {os.path.basename(file_path)}")
+    else:
+        print(f"FAIL: {os.path.basename(file_path)}")
+
+
+print("\n" + "=" * 70)
+print("MODULE 2 CLEANING COMPLETED")
+print("=" * 70)
