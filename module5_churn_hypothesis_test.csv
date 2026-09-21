@@ -1,0 +1,2 @@
+Test,Metric,Churned_Mean,Retained_Mean,Mean_Difference,T_Statistic,P_Value,Alpha,Significant
+Welch Independent Two-Sample T-Test,Total Logins,65.15,133.97,-68.82,-8.424961960701031,3.030718719803872e-16,0.05,True
