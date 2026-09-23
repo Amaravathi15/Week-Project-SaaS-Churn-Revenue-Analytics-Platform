@@ -1,0 +1,4 @@
+Risk_Level,Customer_Count,Total_MRR,Average_MRR,Average_Risk_Score
+Low Risk,130,83611.76,643.17,0.96
+Medium Risk,175,108704.08,621.17,4.03
+High Risk,115,71049.72,617.82,6.74
