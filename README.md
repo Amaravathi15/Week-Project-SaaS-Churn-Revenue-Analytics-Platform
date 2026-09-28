@@ -7,18 +7,18 @@ This project analyzes customer subscriptions, product usage, support tickets, ch
 
 Tools Used
 
-•	Python (Pandas, NumPy, Matplotlib, Scikit-learn)
-•	SQL
-•	Microsoft Excel
-•	Power BI
+	Python (Pandas, NumPy, Matplotlib, Scikit-learn)
+	SQL
+	Microsoft Excel
+	Power BI
 
 Dataset
 
 The project uses four cleaned datasets:
-•	cleaned_saas_customers.csv
-•	cleaned_saas_subscriptions.csv
-•	cleaned_saas_usage.csv
-•	cleaned_saas_tickets.csv
+	cleaned_saas_customers.csv
+	cleaned_saas_subscriptions.csv
+	cleaned_saas_usage.csv
+	cleaned_saas_tickets.csv
 
 Project Modules
 
@@ -29,13 +29,13 @@ Project Modules
 Outputs
 
 The project generates:
-•	Cleaned datasets
-•	Statistical reports
-•	Customer segmentation
-•	Churn risk ranking
-•	Excel KPI report
-•	Power BI dashboard
-•	Executive summary
+	Cleaned datasets
+	Statistical reports
+	Customer segmentation
+	Churn risk ranking
+	Excel KPI report
+	Power BI dashboard
+	Executive summary
 Author
 Amaravathi Reddy
 Data Analyst Project
