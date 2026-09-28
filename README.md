@@ -7,10 +7,7 @@ This project analyzes customer subscriptions, product usage, support tickets, ch
 
 Tools Used
 
-	Python (Pandas, NumPy, Matplotlib, Scikit-learn)
-	SQL
-	Microsoft Excel
-	Power BI
+	Python (Pandas, NumPy, Matplotlib, Scikit-learn) ,SQL, Microsoft Excel, Power BI
 
 Dataset
 
