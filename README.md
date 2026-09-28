@@ -1,7 +1,7 @@
 SaaS Charan and  Revenue Analytics Project
 
 Project Overview
-This project analyzes customer subscriptions, product usage, support tickets, churn risk, retention, and customer segmentation for a SaaS business using Python, SQL, Excel, and Power BI.
+This project analyzes customer subscriptions, product usage, support tickets, churn risk, retention, and customer segmentation for a SaaS business 
 
 Tools Used
 •	Python (Pandas, NumPy, Matplotlib, Scikit-learn)
